@@ -1,0 +1,671 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+bodyサイズの調整--*/
+body{
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*
+titleの調整--*/
+.title_first{
+	height: 360px;
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 40px;
+}
+
+.title_first h1{
+	font-size: 48px;
+}
+
+.title_first p{
+	font-size: 36px;
+	margin-top: 40px;
+}
+
+
+/*
+ナビ作成--*/
+.about_more{
+	font-size: 21px;
+	color: #222222;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	border: 2px solid #efefef ;
+}
+
+.about_more_img{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding-left: 10%;
+}
+
+.about_more_section{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.about_more_img img{
+	width: 50%;
+	height: auto;
+}
+
+.about_more_text {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about_more_text a{
+	color: #222222;
+	text-decoration: none;
+}
+
+.about_more_text a:hover{
+	color: #3f98ef;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/*
+content_first真ん中に寄れい!!--*/
+.content_first h3{
+	font-size: 24px;
+	color: #ffd61a;
+	margin-top: 120px;
+	text-align: center;
+}
+
+.content_first p{
+	text-align: center
+}
+
+.content_first_1{
+	margin-top: 24px;
+}
+
+.content_first_2{
+	margin-top: 64px;
+}
+
+.content_first_3{
+	margin-top: 40px;
+}
+
+.content_first_4{
+	margin-top: 40px;
+}
+
+
+/*
+img_section調整--background-size:cover;以外も使ってみる!!*/
+.img_section div{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-size:cover ;
+}
+
+.img_section img{
+	width: 100%;
+}
+
+/*
+content_second真ん中寄せる!!及び文字サイズの調整--*/
+.content_second{
+	text-align: center;
+}
+
+.content_second h3{
+	font-size: 24px;
+	color: #222222;
+	margin-top: 64px;
+}
+
+.content_second p{
+	margin-top: 40px;
+	margin-bottom: 64px;
+}
+
+
+/*
+img_section_second左右に並べる--*/
+.img_section_second{
+	display: flex;
+	background-color: #f8f8ff;
+}
+
+.img_section_second_left{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_section_second_text{
+	display: flex;
+	width: 50%;
+	justify-content: left;
+	align-items: center;
+}
+
+.img_section_second_left img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img_section_second_text div{
+	width: 100%;
+	margin-left: 48px;
+}
+
+.img_section_second_text h4{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+
+/*
+img_section_thirdを左右に並べる--*/
+.img_section_third{
+	display: flex;
+	background-color: #f8f8ff;
+}
+
+.img_section_third_left{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_section_third_img{
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_section_third_text div{
+	width: 100%;
+	margin-right: 48px;
+}
+
+.img_section_third_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img_section_third_text h5{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+/*
+img_section_fourthを左右に並べる--*/
+.img_section_fourth{
+	display: flex;
+	background-color: #f8f8ff;
+}
+
+.img_section_fourth_img{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_section_fourth_text{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_section_fourth_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img_section_fourth_text h5{
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.news{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.news h6{
+	font-size: 24px;
+	color: #ffd61a;
+	padding-top: 64px;
+	padding-bottom: 24px;
+}
+
+.news p{
+	padding-bottom: 64px;
+}
+
+
+/*
+news_listを並べる--*/
+.news_list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.news_list_center {
+	margin: 0 32px;
+}
+
+.news_list_left_day{
+	margin: 32px 0 24px 0;
+}
+
+.news_list_center_day{
+	margin: 32px 0 24px 0;
+}
+
+.news_list_right_day{
+	margin: 32px 0 24px 0;
+}
+/*
+moreボタン--*/
+
+.more{
+  width: 300px;
+  height: 60px;
+  background-color: #ffd61a;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  margin: 56px auto 48px auto;
+  font-size: 21px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+/*
+content_section内の調整--*/
+.content_section{
+	background-color: #fafafa;
+	width: 100%;
+	height: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	padding-top: 64px;
+	padding-bottom: 56px;
+}
+
+h7{
+	font-size: 24px;
+	color: #222222;
+	box-sizing: border-box;
+}
+
+.content_section p{
+	padding-top: 24px;
+	padding-bottom: 64px;
+	text-align: center;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 比率を16:9に固定 */
+  margin: 0 0 64px 0;
+}
+
+/* Google Mapのiframe */
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.school{
+	text-align: left;
+	vertical-align: top;
+	
+}
+
+.school td{
+	padding-left: 48px;
+	padding-bottom: 24px;
+}
+
+/*
+contact--*/
+
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contact h8{
+	font-size: 24px;
+	color: #222222;
+	padding: 64px 0 24px 0;
+}
+
+.contact_wait{
+	padding-top: 64px;
+}
+
+.contact_wait2{
+	padding-bottom: 32px;
+}
+
+/*
+.contact_form--*/
+
+.contact-table {
+	width: 80%;
+	margin: auto;
+}
+
+
+.contact-application,
+.contact-body {
+    padding-top: 24px;
+}
+
+.contact-application {
+    text-align: left;
+	padding-right: 120px;
+}
+
+.contact_mail{
+	padding-bottom: 16px;
+}
+
+.form-text {
+	width: 328px;
+	height: 36px;
+    border: 1px solid #bfbfbf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contact-section-txt{
+	font-size: 14px;
+    margin-left: 40px;
+}
+
+.contact-section-txt1.contact-section-txt2,
+.contact-section-txt3,.contact-section-txt4{
+	background-color: #f0ebe5;
+}
+
+.contact-body input[type=checkbox] {
+	width:			24px;
+	height:			24px;
+	-moz-transform:		scale(1.4);
+	-webkit-transform:	scale(1.4);
+	transform:		scale(1.4);
+}
+
+.form-textarea {
+    width: 328px;
+    height: 108px;
+    border: 1px solid #bfbfbf;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	margin-top: 12px;
+}
+
+textarea{
+	vertical-align: top;
+}
+
+/*
+非表示ウィンドウ--*/
+.contact-section {
+	display: block;
+	margin-bottom: 24px;
+	cursor:pointer;
+}
+
+.overlay {
+	display: none;
+}
+
+
+/*
+送信ボタン--*/
+.contact-submit {
+  width: 298px;
+  height: 54px;
+  background-color: #ffd61a;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  margin: 40px auto;
+  font-size: 18px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.contact-div{
+	text-align: center;
+}
+
+/*
+最終確認--*/
+.fainal{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.modal {
+display: block;
+width: 600px;
+max-width: 100%;
+height: 300px;
+position: fixed;
+z-index: 100;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+/* margin: -200px 0 0 -200px; */
+background: white;
+box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+.closed {
+  display: none;
+}
+
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 50;
+background: rgba(0, 0, 0, 0.6);
+}
+.modal-guts {
+position: absolute;
+color: #fafafa;
+background-color: #222222;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+padding: 20px 50px 20px 20px;
+}
+
+.modal-guts h4{
+font-size: 24px;
+color: red;
+}
+
+.modal .close-button {
+position: absolute;
+z-index: 1;
+top: 10px;
+right: 20px;
+border: 0;
+background: white;
+color: black;
+padding: 5px 10px;
+font-size: 1.3rem;
+}
+.open-button {
+border: 0;
+margin-right: 30%;
+background: lightgreen;
+color: white;
+padding: 10px 20px;
+border-radius: 10px;
+font-size: 21px;
+}
+
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 150px;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #3f98ef;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #3f98ef;
+}
+
+.fainal_title{
+	margin-bottom: 15px;
+}
+
+.チーズ{
+ color: crimson;
+}
+
+
+/*
+footer--*/
+footer {
+  width: 100%;
+  height: auto; 
+  font-size: 18px;
+  text-align: center;
+  padding: 32px 0;
+  background-color: #707070;
+  margin-top: 150px;
+}
+
+
+/*
+---------------------*/
+
+
+
+
+
+
